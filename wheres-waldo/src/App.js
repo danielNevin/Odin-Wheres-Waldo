@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import GameHeader from "./Components/GameHeader";
+import GameBoard from "./Components/GameBoard";
 
 function App() {
+
+  const [waldoGrayscale, setWaldoGrayscale] = useState(false);
+  const [odlawGrayscale, setOdlawGrayscale] = useState(false);
+  const [wizardGrayscale, setWizardGrayscale] = useState(false);
+
+  function handleWaldoClick() {
+    setWaldoGrayscale(true);
+  }
+
+  function handleOdlawClick() {
+    setOdlawGrayscale(true);
+  }
+
+  function handleWizardClick() {
+    setWizardGrayscale(true);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GameHeader waldoGrayscale={waldoGrayscale} odlawGrayscale={odlawGrayscale} wizardGrayscale={wizardGrayscale}/>
+      <GameBoard handleWaldoClick={handleWaldoClick} handleOdlawClick={handleOdlawClick} handleWizardClick={handleWizardClick}/>
     </div>
   );
 }
