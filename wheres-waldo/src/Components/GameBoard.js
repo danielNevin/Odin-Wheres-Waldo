@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import level1 from '../Resources/level-1.jpg'
+import SelectionDropdown from "./selectionDropdown";
 
 function GameBoard(props) {
 
+  const [isClicked, setIsClicked] = useState(false);
+  const [position, setPosition] = useState({
+    X: 0,
+    Y: 0
+  });
+  const [scaledX, seScaledX] = useState(0);
+  const [scaledY, setScaledY] = useState(0);
+
+  const handleImageClick = (e) => {
+    var rect = e.target.getBoundingClientRect();
+    var x = rect.width - (rect.width - e.clientX); //x position within the element.
+    var y = e.clientY - rect.top;  //y position within the element.
+    setIsClicked(!isClicked);
+    setPosition({X: x, Y: y});
+    seScaledX((x / rect.width) * 100);
+    setScaledY((y / rect.height) * 100);
+  }
+
   return (
-    <div>
-      <img src={level1 } alt="Where's Waldo?" useMap="#map1"/>
-      <map name="map1">
-        <area shape="rect" coords="520, 350, 560, 420" onClick={() => props.handleWaldoClick()} alt="Here"/>
-        <area shape="rect" coords="230, 350, 265, 430" onClick={() => props.handleOdlawClick()} alt="Here"/>
-        <area shape="rect" coords="620, 350, 670, 420" onClick={() => props.handleWizardClick()} alt="Here"/>
-      </map>
+    <div className="relative">
+      <img src={level1 } alt="Where's Waldo?" onClick={handleImageClick} className="cursor-pointer"/>
+      {isClicked && (
+          <SelectionDropdown position={position}/>
+      )}
     </div>
   );
 }

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+
 import GameHeader from "./Components/GameHeader";
 import GameBoard from "./Components/GameBoard";
 
