@@ -17,8 +17,7 @@ function SelectionDropdown(props) {
           </li>
         </ul>
       </div>
-    </div>
-    
+    </div> 
   )
 }
 
