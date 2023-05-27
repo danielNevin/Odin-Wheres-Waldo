@@ -2,6 +2,8 @@ import React from "react";
 
 function SelectionDropdown(props) {
 
+  // Handles the clicking of the 3 options within the Character Selection Dropdown
+  // Evaluates whether the coordinates of the user click are within the bounding boxes of the characters on the Game Board
   const handleUserClick = (name) => {
     if (name == 'waldo') {
       const clickInTolerance = (((props.scaledX <= props.characterCoordinates[0].waldo[0] + 2) && (props.scaledX >= props.characterCoordinates[0].waldo[0] - 2)) && ((props.scaledY <= props.characterCoordinates[0].waldo[1] + 2)) && ((props.scaledY >= props.characterCoordinates[0].waldo[1] - 2)));

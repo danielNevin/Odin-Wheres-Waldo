@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function LeaderboardHeader(props) {
 
+  // Handles clicking the New Game button in the Leaderboard Page Header
   const handleNewGameClick = (props) => {
     props.setIsStart(true);
     props.setElapsedTime(0);

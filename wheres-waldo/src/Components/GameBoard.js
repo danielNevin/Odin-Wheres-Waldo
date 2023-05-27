@@ -3,7 +3,7 @@ import level1 from '../Resources/level-1.jpg'
 import SelectionDropdown from "./SelectionDropdown.js";
 
 function GameBoard(props) {
-
+  // State variables
   const [isClicked, setIsClicked] = useState(false);
   const [position, setPosition] = useState({
     X: 0,
@@ -12,6 +12,9 @@ function GameBoard(props) {
   const [scaledX, seScaledX] = useState(0);
   const [scaledY, setScaledY] = useState(0);
 
+  // Handle Game Board click event
+  // Position holds the pixel values of the distance from the top edge and left edge of the Game Board
+  // ScaledX and ScaledY hold the scaled percentage values realtive to the size of the Game Board
   const handleImageClick = (e) => {
     var rect = e.target.getBoundingClientRect();
     var x = rect.width - (rect.width - e.clientX); //x position within the element.

@@ -2,6 +2,7 @@ import React from "react";
 
 export function StartingCard(props) {
 
+  // Handles the clicking of the Play Now button
   const handlePlayClick = () => {
     props.setIsStart(false);
     props.handleTimerStart()
