@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import level1 from '../Resources/level-1.jpg'
-import SelectionDropdown from "./selectionDropdown";
+import SelectionDropdown from "./SelectionDropdown.js";
 
 function GameBoard(props) {
 
@@ -23,10 +23,10 @@ function GameBoard(props) {
   }
 
   return (
-    <div className="relative">
+    <div className="relative shadow-inner">
       <img src={level1 } alt="Where's Waldo?" onClick={handleImageClick} className="cursor-pointer"/>
       {isClicked && (
-          <SelectionDropdown position={position}/>
+          <SelectionDropdown position={position} characterCoordinates={props.characterCoordinates} scaledX={scaledX} scaledY={scaledY} setWaldoFound={props.setWaldoFound} setOdlawFound={props.setOdlawFound} setWizardFound={props.setWizardFound} setIsClicked={setIsClicked}/>
       )}
     </div>
   );
