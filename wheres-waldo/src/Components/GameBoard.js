@@ -26,11 +26,13 @@ function GameBoard(props) {
   }
 
   return (
-    <div className="relative shadow-inner">
-      <img src={level1 } alt="Where's Waldo?" onClick={handleImageClick} className="cursor-pointer"/>
-      {isClicked && (
-          <SelectionDropdown position={position} characterCoordinates={props.characterCoordinates} scaledX={scaledX} scaledY={scaledY} setWaldoFound={props.setWaldoFound} setOdlawFound={props.setOdlawFound} setWizardFound={props.setWizardFound} setIsClicked={setIsClicked}/>
-      )}
+    <div className="flex relative shadow-inner justify-center">
+      <div className="shadow-2xl">
+        <img src={level1 } alt="Where's Waldo?" onClick={handleImageClick} className="cursor-pointer"/>
+        {isClicked && (
+            <SelectionDropdown position={position} characterCoordinates={props.characterCoordinates} scaledX={scaledX} scaledY={scaledY} setWaldoFound={props.setWaldoFound} setOdlawFound={props.setOdlawFound} setWizardFound={props.setWizardFound} setIsClicked={setIsClicked}/>
+        )}
+      </div>
     </div>
   );
 }
