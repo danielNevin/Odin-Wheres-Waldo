@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Odin-Wheres-Waldo/static/css/main.6ef9aee7.css",
-    "main.js": "/Odin-Wheres-Waldo/static/js/main.911633b0.js",
+    "main.css": "/Odin-Wheres-Waldo/static/css/main.8cedf611.css",
+    "main.js": "/Odin-Wheres-Waldo/static/js/main.5d939326.js",
     "static/media/level-1.jpg": "/Odin-Wheres-Waldo/static/media/level-1.8b871ac1382de68197ba.jpg",
     "static/media/waldoHeadshot.jpg": "/Odin-Wheres-Waldo/static/media/waldoHeadshot.1e2ee91f0cfa0ceeb550.jpg",
     "static/media/odlawHeadshot.jpg": "/Odin-Wheres-Waldo/static/media/odlawHeadshot.f34b5260e086e9e07982.jpg",
     "index.html": "/Odin-Wheres-Waldo/index.html",
-    "main.6ef9aee7.css.map": "/Odin-Wheres-Waldo/static/css/main.6ef9aee7.css.map",
-    "main.911633b0.js.map": "/Odin-Wheres-Waldo/static/js/main.911633b0.js.map"
+    "main.8cedf611.css.map": "/Odin-Wheres-Waldo/static/css/main.8cedf611.css.map",
+    "main.5d939326.js.map": "/Odin-Wheres-Waldo/static/js/main.5d939326.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ef9aee7.css",
-    "static/js/main.911633b0.js"
+    "static/css/main.8cedf611.css",
+    "static/js/main.5d939326.js"
   ]
 }
