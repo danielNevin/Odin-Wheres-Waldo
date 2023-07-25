@@ -1,6 +1,6 @@
 # This is a Where's Waldo Game with a Persistent Leaderboard
 
-![Image](wheres-waldo/src/Resources/Screencap/wheresWaldo.png)
+![Image](wheres-waldo/src/Resources/Screencap/wheresWaldo2.png)
 
 This Web App is my shot at building a "Where's Waldo" game with a persistent leaderboard as a submission for The Odin Project's Where's Waldo JavaScript Project.
 
