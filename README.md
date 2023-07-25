@@ -18,6 +18,8 @@ The project was built using React, TailwindCSS, and Firebase.
 
 - Once all characters are found, the user will be shown their time and asked for a display name to submit their time to the leaderboard.
 
+- All of the leaderboard data is stored using Firebase Firestore
+
 If you want to have a look just press the github-pages button to the right of this README. While you're there feel free to play a round and submit your time to the leaderboard.
 
 
