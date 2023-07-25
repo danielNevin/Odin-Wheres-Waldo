@@ -104,7 +104,7 @@ function App() {
   }, [location]);
 
   return (
-    <div>
+    <div className="bg-stone-100 h-screen">
       <Routes>
         <Route exact path='/' element={ <Game handleWaldoClick={handleWaldoClick} handleOdlawClick={handleOdlawClick} handleWizardClick={handleWizardClick} characterCoordinates={characterCoordinates} setWaldoFound={setWaldoFound} setOdlawFound={setOdlawFound} setWizardFound={setWizardFound} waldoFound={waldoFound} odlawFound={odlawFound} wizardFound={wizardFound} elapsedTime={elapsedTime} username={username} handleSubmitClick={handleSubmitClick} handleInputChange={handleInputChange} isWin={isWin} isStart={isStart} setIsStart={setIsStart} handleTimerStart={handleTimerStart} setElapsedTime={setElapsedTime} /> } />
         <Route path='/leaderboard' element={ <Leaderboard leaderboard={leaderboard} setIsStart={setIsStart} setElapsedTime={setElapsedTime} /> } />

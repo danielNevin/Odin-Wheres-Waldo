@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function GameHeader(props) {
 
   return (
-    <div className="h-20 p-8 flex flex-row justify-between items-center">
+    <div className="h-20 p-8 flex flex-row justify-between items-center bg-white">
       <div className="flex flex-row gap-4 ">
         <div className="flex flex-col justify-center items-center">
           <img className={`h-8 w-8 filter transition-all ${props.waldoFound ? 'scale-110' : 'grayscale scale-75'}`} src={waldo} alt="Waldo"/>
